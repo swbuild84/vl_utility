@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{748A340D-D6EE-4FFC-8E6F-3E60F95D93EE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>vl_utility</RootNamespace>
+    <AssemblyName>vl_utility</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\AutoCAD2016_X32\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\AutoCAD_2016_x32\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="accoremgd">
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2016\accoremgd.dll</HintPath>
+    </Reference>
+    <Reference Include="acdbmgd">
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2016\acdbmgd.dll</HintPath>
+    </Reference>
+    <Reference Include="acmgd">
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2016\acmgd.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VlineLibRU, Version=1.0.5328.23551, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\VlineLibRU\VlineLib\bin\Debug\VlineLibRU.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BlockJig.cs" />
+    <Compile Include="CConstruct.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="CodeFile1.cs" />
+    <Compile Include="CProlet.cs" />
+    <Compile Include="CSVReader.cs" />
+    <Compile Include="ConstrEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConstrEditForm.Designer.cs">
+      <DependentUpon>ConstrEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataGridViewPrevFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataGridViewPrevFrm.Designer.cs">
+      <DependentUpon>DataGridViewPrevFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataStructures.cs" />
+    <Compile Include="Electical.cs" />
+    <Compile Include="InputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputBox.Designer.cs">
+      <DependentUpon>InputBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LowVltgCalcFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LowVltgCalcFrm.Designer.cs">
+      <DependentUpon>LowVltgCalcFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyConvert.cs" />
+    <Compile Include="Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SituationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SituationForm.Designer.cs">
+      <DependentUpon>SituationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TableCSVEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TableCSVEditForm.Designer.cs">
+      <DependentUpon>TableCSVEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VlineForms\BlockSelectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VlineForms\BlockSelectForm.Designer.cs">
+      <DependentUpon>BlockSelectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VlineForms\DbSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VlineForms\DbSearchForm.Designer.cs">
+      <DependentUpon>DbSearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VlineForms\GroupConstrEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VlineForms\GroupConstrEditForm.Designer.cs">
+      <DependentUpon>GroupConstrEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VlineForms\InputKlimatDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VlineForms\InputKlimatDlg.designer.cs">
+      <DependentUpon>InputKlimatDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win32.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ConstrEditForm.resx">
+      <DependentUpon>ConstrEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataGridViewPrevFrm.resx">
+      <DependentUpon>DataGridViewPrevFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputBox.resx">
+      <DependentUpon>InputBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LowVltgCalcFrm.resx">
+      <DependentUpon>LowVltgCalcFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SituationForm.resx">
+      <DependentUpon>SituationForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TableCSVEditForm.resx">
+      <DependentUpon>TableCSVEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VlineForms\BlockSelectForm.resx">
+      <DependentUpon>BlockSelectForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VlineForms\DbSearchForm.resx">
+      <DependentUpon>DbSearchForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VlineForms\GroupConstrEditForm.resx">
+      <DependentUpon>GroupConstrEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VlineForms\InputKlimatDlg.resx">
+      <DependentUpon>InputKlimatDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\application_windows_down_1516.png" />
+    <Content Include="Images\application_windows_new_4011.png" />
+    <Content Include="Images\application_windows_remove_6278.png" />
+    <Content Include="Images\application_windows_up_4775.png" />
+    <Content Include="Images\construct.png" />
+    <Content Include="Images\detail.png" />
+    <Content Include="Images\file.png" />
+    <Content Include="Images\folder.png" />
+    <None Include="Images\icon-collapse_all.png" />
+    <None Include="Images\gtk-save-as_9071.png" />
+    <None Include="Images\icon-search-black.png" />
+    <Content Include="Images\refresh.png" />
+    <None Include="Images\stock_save_6570.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
